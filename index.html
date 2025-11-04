@@ -1,0 +1,202 @@
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothing Store</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #a8c1c9; /* Soft bluish-gray background */
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      background-color: #8baab5; /* Medium cool blue container */
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    header {
+      background-color: #1f3b4d; /* Dark teal header */
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: 10px;
+    }
+
+    header h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    header h2 {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+      color: #bcd0d9; /* Light bluish-gray text */
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      background-color: #2c546e; /* Button dark blue */
+      padding: 10px 25px;
+      border-radius: 8px;
+      margin: 0 5px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #366c87; /* Button hover */
+    }
+
+    h2.section-title {
+      text-align: center;
+      color: white;
+      background-color: #2e5163; /* Section title bar */
+      padding: 10px;
+      margin: 30px 0 15px;
+      border-radius: 8px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      padding: 10px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .product-card img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 15px;
+    }
+
+    .product-card h3 {
+      color: #1f3b4d;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+
+    .product-card p {
+      margin: 8px 0;
+      color: #555;
+      font-weight: 600;
+    }
+
+    .buy-btn {
+      background-color: #1f3b4d; /* Dark navy button */
+      color: white;
+      padding: 8px 25px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.9em;
+      transition: background 0.3s;
+    }
+
+    .buy-btn:hover {
+      background-color: #2c546e; /* Hover navy */
+    }
+
+    .mission, .vision, .goal {
+      background-color: #2e5163; /* Dark teal section */
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 25px;
+      text-align: center;
+    }
+
+    .mission h2, .vision h2, .goal h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .mission p, .vision p, .goal p {
+      font-size: 16px;
+      color: #e8eff2;
+    }
+
+    footer {
+      text-align: center;
+      color: white;
+      background-color: #1f3b4d;
+      padding: 15px;
+      border-radius: 0 0 10px 10px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Welcome</h1>
+      <h2>Discover Your Style – Trendy Clothing for Everyone</h2>
+      <nav>
+        
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="product.html">Product</a>
+      </nav>
+    </header>
+
+   
+
+    <section class="mission">
+      <h2>Our Mission</h2>
+      <p>To deliver top-quality, stylish, and affordable clothing that empowers individuals to express themselves confidently.</p>
+    </section>
+
+    <section class="vision">
+      <h2>Our Vision</h2>
+      <p>To become a trusted global clothing brand recognized for creativity, sustainability, and customer satisfaction.</p>
+    </section>
+
+    <section class="goal">
+      <h2>Our Goal</h2>
+      <p>To make fashion accessible to everyone with a perfect blend of comfort, trend, and affordability.</p>
+    </section>
+
+    <div class="team">
+      <h1 align="center">
+        <img src="FD.jpg" alt="CEO">
+        <img src="PM.jpg" alt="Manager">
+      </h1>
+    </div>
+
+    
+  </div>
+</body>
+</html>

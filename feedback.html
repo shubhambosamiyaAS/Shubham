@@ -1,0 +1,176 @@
+
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback - Clothing Store</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #a8c1c9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background-color: #2e4b56;
+      padding: 30px;
+      border-radius: 15px;
+      color: #fff;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    p.subtitle {
+      color: #d0e2e8;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .nav {
+      margin-bottom: 30px;
+    }
+
+    .nav button {
+      background-color: #345b67;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .nav button:hover {
+      background-color: #4e7887;
+    }
+
+    form {
+      background-color: #a8c1c9;
+      padding: 25px;
+      border-radius: 15px;
+      color: #000;
+      text-align: left;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      background: #e4edf0;
+      font-size: 15px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .rating {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+    }
+
+    .rating input {
+      display: none;
+    }
+
+    .rating label {
+      font-size: 30px;
+      color: #ccc;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .rating input:checked ~ label,
+    .rating label:hover,
+    .rating label:hover ~ label {
+      color: gold;
+    }
+
+    button.submit {
+      display: block;
+      margin: 25px auto 0;
+      background-color: #2e4b56;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button.submit:hover {
+      background-color: #3d6675;
+    }
+
+    footer {
+      text-align: center;
+      color: #d0e2e8;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Clothing Store</h1>
+    <p class="subtitle">We Value Your Feedback 💬</p>
+
+    <div class="nav">
+      <a href="index.html"><button>Home</button></a>
+      <a href="about.html"><button>About</button></a>
+      <a href="contact.html"><button>Contact</button></a>
+      <a href="product.html"><button>Product</button></a>
+    </div>
+
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label>Rate Your Experience</label>
+      <div class="rating">
+        <input type="radio" name="star" id="star5"><label for="star5">★</label>
+        <input type="radio" name="star" id="star4"><label for="star4">★</label>
+        <input type="radio" name="star" id="star3"><label for="star3">★</label>
+        <input type="radio" name="star" id="star2"><label for="star2">★</label>
+        <input type="radio" name="star" id="star1"><label for="star1">★</label>
+      </div>
+
+      <label for="feedback">Your Feedback</label>
+      <textarea id="feedback" placeholder="Write your feedback here..."></textarea>
+
+      <button type="submit" class="submit">Submit Feedback</button>
+    </form>
+
+    <footer>
+      <p>📞 +91 98765 43210 | ✉️ feedback@clothingstore.com</p>
+     
+    </footer>
+  </div>
+</body>
+</html>
